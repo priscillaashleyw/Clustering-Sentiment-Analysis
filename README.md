@@ -37,6 +37,8 @@ This project applies various **language models** and **clustering algorithms** t
 
 ## Repository Structure
 
+```
+
 Clustering-Sentiment-Analysis/
 ├── data_cleaning.ipynb             # Preprocess tweets 
 ├── sample_data_cleaning.ipynb      # Cleaning on sample subset
@@ -51,17 +53,19 @@ Clustering-Sentiment-Analysis/
 ├── .gitignore                      # Ignore venv, large files, and data
 └── README.md                       # Project documentation
 
+```
+
 
 ## Setup Instructions
 
-### Clone the repository
+### 1. Clone the repository
 
 Run the following commands in your terminal:
 
 git clone https://github.com/priscillaashleyw/Clustering-Sentiment-Analysis.git
 cd Clustering-Sentiment-Analysis
 
-### Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 
 For Mac/Linux:
 python3 -m venv venv
@@ -71,15 +75,15 @@ For Windows (Command Prompt or PowerShell):
 python -m venv venv
 venv\Scripts\activate
 
-### Install dependencies
+### 3. Install dependencies
 
 pip install -r requirements.txt
 
-### Download pretrained embeddings
+### 4. Download pretrained embeddings
 
 - GloVe: place `glove.twitter.27B.200d.txt` in the project root directory  
 
-### Launch Jupyter Notebook
+### 5. Launch Jupyter Notebook
 jupyter notebook
 
 Then open the desired `.ipynb` file (e.g. `tfidf.ipynb`, `sbert.ipynb`, `glove.ipynb`) and select **Run All Cells** to execute the analysis.
