@@ -23,7 +23,6 @@ Thumbs.db
 .idea/
 
 # --- Data & models (optional for IT1244) ---
-*.csv
 *.xlsx
 *.pkl
 *.h5
