@@ -23,6 +23,7 @@ Thumbs.db
 .idea/
 
 # --- Data & models (optional for IT1244) ---
+glove.twitter.27B.200d.txt
 *.xlsx
 *.pkl
 *.h5
