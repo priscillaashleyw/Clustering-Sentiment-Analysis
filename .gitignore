@@ -22,7 +22,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# --- Data & models (optional for IT1244) ---
+# --- Data & models ---
 glove.twitter.27B.200d.txt
 *.xlsx
 *.pkl
