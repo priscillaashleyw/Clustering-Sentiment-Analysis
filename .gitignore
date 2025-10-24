@@ -1,0 +1,37 @@
+# --- Virtual environments ---
+venv/
+.env/
+
+# --- Python cache / build files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+
+# --- Jupyter / Colab checkpoints ---
+.ipynb_checkpoints/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor configs ---
+.vscode/
+.idea/
+
+# --- Data & models (optional for IT1244) ---
+*.csv
+*.xlsx
+*.pkl
+*.h5
+*.model
+*.sav
+*.zip
+
+# --- Temporary or large output ---
+*.log
+*.tmp
+*.bak
