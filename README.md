@@ -8,6 +8,8 @@ The goal is to discover how well different text representation and clustering te
 
 This project applies various **language models** and **clustering algorithms** to perform sentiment grouping on social media data.
 
+![Workflow Overview](workflow.jpg)
+
 ### Objectives
 
 - Clean and preprocess raw Twitter text data  
@@ -28,11 +30,31 @@ This project applies various **language models** and **clustering algorithms** t
   - **K-Means**
   - **Gaussian Mixture Models (GMM)**
   - **Agglomerative Clustering**
-- Evaluate clustering performance using:
-  - Silhouette Score  
-  - Adjusted Rand Index (ARI)  
-  - Normalized Mutual Information (NMI)  
-  - Hungarian Accuracy 
+
+
+## Evaluation Metrics
+
+Clustering performance was evaluated using:
+
+- **Silhouette Score** – used for selecting optimal clustering parameters  
+- **Hungarian Accuracy** – used for final performance evaluation  
+- *(Additional metrics such as ARI and NMI were computed for reference but not used for parameter tuning.)*
+
+
+## Hyperparameter Tuning
+
+Hyperparameter optimization was conducted for the main dimensionality reduction and clustering methods to identify the best-performing combinations.  
+
+- **Dimensionality Reduction:**  
+  - *Truncated SVD* – number of components  
+  - *PCA* – number of components (selected based on explained variance ratio)  
+  - *UMAP* – number of neighbors (`n_neighbors`), minimum distance (`min_dist`), and embedding dimensions (`n_components`)
+
+- **Clustering Algorithms:**  
+  - *Gaussian Mixture Model (GMM)* – covariance type 
+  - *Agglomerative Clustering* – linkage method 
+
+Silhouette Score was used to select the optimal parameters, while Hungarian Accuracy was used to evaluate the final clustering results.
 
 
 ## Repository Structure
