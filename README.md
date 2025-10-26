@@ -8,7 +8,7 @@ The goal is to discover how well different text representation and clustering te
 
 This project applies various **language models** and **clustering algorithms** to perform sentiment grouping on social media data.
 
-![Workflow Overview](workflow.jpg)
+![Workflow Overview](workflow.JPG)
 
 ### Objectives
 
