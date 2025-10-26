@@ -38,7 +38,6 @@ Clustering performance was evaluated using:
 
 - **Silhouette Score** – used for selecting optimal clustering parameters  
 - **Hungarian Accuracy** – used for final performance evaluation  
-- *(Additional metrics such as ARI and NMI were computed for reference but not used for parameter tuning.)*
 
 
 ## Hyperparameter Tuning
