@@ -28,7 +28,7 @@ more interpretable, sentiment-aware, and reflective of real-world tweet distribu
 
 This project applies various **language models** and **clustering algorithms** to perform sentiment grouping on social media data.
 
-![Workflow Overview](workflow_overview.JPG)
+![Pipeline Overview](pipeline.png)
 
 
 ### Objectives
