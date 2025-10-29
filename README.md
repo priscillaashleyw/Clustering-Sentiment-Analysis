@@ -10,6 +10,26 @@ This project applies various **language models** and **clustering algorithms** t
 
 ![Workflow Overview](workflow.JPG)
 
+
+## References
+
+1. Ma, Yuan, and Wu (2017). *Exploring Performance of Clustering Methods on Document Sentiment Analysis.*
+   - Limitation: Their preprocessing removed stopwords and applied stemming, which reduced the preservation of key sentiment cues like adjectives and adverbs.
+     They also noted that K-Means tends to perform poorly on imbalanced datasets common in sentiment data.
+   - Our Adaptation: We minimized stopword removal to retain adjectives/adverbs crucial for emotional tone,
+     and incorporated Gaussian Mixture Models (GMM) and Agglomerative Clustering to better handle data imbalance.
+
+2. Salloum et al. (2024). *K-Means Clustering of Tweet Emotions: A 2D PCA Visualization Approach.*
+   - Limitation: While TF-IDF + PCA + K-Means allowed for efficient visualization, it struggled with overlapping emotions 
+     and lacked deep semantic understanding due to reliance on surface-level features.
+   - Our Adaptation: We extend their framework by replacing TF-IDF with contextual embeddings (BERTweet, CardiffNLP) 
+     and applying dimensionality reduction (PCA/UMAP) for clearer, semantically coherent visualization and clustering.
+
+Summary of Our Approach:
+Building on both studies, our model combines contextualized embeddings with multiple clustering techniques 
+to overcome issues of feature sparsity, semantic overlap, and class imbalance. This produces clusters that are 
+more interpretable, sentiment-aware, and reflective of real-world tweet distributions.
+
 ### Objectives
 
 - Clean and preprocess raw Twitter text data  
