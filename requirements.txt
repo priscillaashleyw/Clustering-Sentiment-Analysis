@@ -13,3 +13,6 @@ notebook
 scikit-learn
 scipy
 vaderSentiment
+scikit-optimize
+umap-learn
+sentence-transformers
