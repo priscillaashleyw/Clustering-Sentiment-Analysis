@@ -145,23 +145,20 @@ jupyter notebook
 
 Then open the desired `.ipynb` file and select **Run All Cells** to execute the analysis.
 
-Below are explanation of each `.ipynb` file:
-* Data Cleaning
+Below is an explanation of each `.ipynb` file:
+* **Data Cleaning** *(Already executed — cleaned outputs are saved as .csv files in the repository. Re-running is optional.)*
   * `data_cleaning.ipynb`
   * `sample_data_cleaning.ipynb`
-    *(Already executed — cleaned outputs are saved as .csv files in the repository. Re-running is optional.)*
-* Exploratory Data Analysis
+* **Exploratory Data Analysis** *(Visualizes dataset distribution, sentiment balance, and example tweets.)*
   * `eda.ipynb`
-    *(Visualizes dataset distribution, sentiment balance, and example tweets.)*
-* Modeling & Clustering Pipelines
+* **Modeling & Clustering Pipelines** *(Run these to replicate or compare sentiment clustering results.)*
   * `trad_feature_extraction.ipynb`
   * `tfidf.ipynb` 
   * `glove.ipynb`
   * `sbert.ipynb`
   * `bertweet.ipynb`
   * `cardiffnlp_twitter_roberta_sentiment.ipynb`
-    *(Run these to replicate or compare sentiment clustering results.)*
-
+  
 
 ## Notes
 
