@@ -25,7 +25,6 @@ Thumbs.db
 # --- Data & models ---
 glove.twitter.27B.200d.txt
 *.xlsx
-*.pkl
 *.h5
 *.model
 *.sav
