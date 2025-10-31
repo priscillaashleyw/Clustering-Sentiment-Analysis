@@ -4,13 +4,6 @@ This project explores **unsupervised sentiment clustering** on airline passenger
 The goal is to discover how well different text representation and clustering techniques can automatically group tweets into sentiment categories such as **positive**, **neutral**, and **negative**.
 
 
-## Overview
-
-This project applies various **language models** and **clustering algorithms** to perform sentiment grouping on social media data.
-
-![Workflow Overview](workflow.JPG)
-
-
 ## References
 
 1. Ma, Yuan, and Wu (2017). *Exploring Performance of Clustering Methods on Document Sentiment Analysis.*
@@ -29,6 +22,14 @@ Summary of Our Approach:
 Building on both studies, our model combines contextualized embeddings with multiple clustering techniques 
 to overcome issues of feature sparsity, semantic overlap, and class imbalance. This produces clusters that are 
 more interpretable, sentiment-aware, and reflective of real-world tweet distributions.
+
+
+## Overview
+
+This project applies various **language models** and **clustering algorithms** to perform sentiment grouping on social media data.
+
+![Pipeline Overview](pipeline.png)
+
 
 ### Objectives
 

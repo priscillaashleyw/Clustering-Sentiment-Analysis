@@ -1,0 +1,157 @@
+{
+  "branch_bests": {
+    "pca+agglo": {
+      "silhouette_subset": 0.05176440626382828,
+      "model": "agglo",
+      "n_components": 150,
+      "reducer": "pca",
+      "linkage": "complete"
+    },
+    "pca+gmm": {
+      "silhouette_subset": 0.04789230498165696,
+      "model": "gmm",
+      "n_components": 108,
+      "reducer": "pca",
+      "cov_type": "full"
+    },
+    "pca+kmeans": {
+      "silhouette_subset": 0.0920301154255867,
+      "model": "kmeans",
+      "n_components": 108,
+      "reducer": "pca"
+    },
+    "umap+agglo": {
+      "silhouette_subset": 0.5284479856491089,
+      "model": "agglo",
+      "reducer": "umap",
+      "linkage": "average",
+      "min_dist": 0.1,
+      "n_components_umap": 48,
+      "n_neighbors": 75
+    },
+    "umap+gmm": {
+      "silhouette_subset": 0.33458182630131444,
+      "model": "gmm",
+      "reducer": "umap",
+      "cov_type": "spherical",
+      "min_dist": 0.1,
+      "n_components_umap": 16,
+      "n_neighbors": 60
+    },
+    "umap+kmeans": {
+      "silhouette_subset": 0.5203215479850769,
+      "model": "kmeans",
+      "reducer": "umap",
+      "min_dist": 0.1,
+      "n_components_umap": 16,
+      "n_neighbors": 75
+    }
+  },
+  "full_eval": [
+    {
+      "branch": "pca+agglo",
+      "params": {
+        "reducer": "pca",
+        "model": "agglo",
+        "n_components": 150,
+        "linkage": "complete"
+      },
+      "Silhouette": 0.051823701709508896,
+      "ARI": 0.10080795416326632,
+      "NMI": 0.05150304631005727,
+      "Hungarian": 0.49545733998223923,
+      "metric_used": "cosine"
+    },
+    {
+      "branch": "pca+gmm",
+      "params": {
+        "reducer": "pca",
+        "model": "gmm",
+        "n_components": 108,
+        "cov_type": "full"
+      },
+      "Silhouette": 0.007806751615914104,
+      "ARI": 0.012797920528338001,
+      "NMI": 0.017543998345332205,
+      "Hungarian": 0.43575380832024047,
+      "metric_used": "euclidean"
+    },
+    {
+      "branch": "pca+kmeans",
+      "params": {
+        "reducer": "pca",
+        "model": "kmeans",
+        "n_components": 108
+      },
+      "Silhouette": 0.09227019548416138,
+      "ARI": 0.12292795842702875,
+      "NMI": 0.08929430581861282,
+      "Hungarian": 0.48596215588496483,
+      "metric_used": "cosine"
+    },
+    {
+      "branch": "umap+agglo",
+      "params": {
+        "reducer": "umap",
+        "model": "agglo",
+        "n_neighbors": 75,
+        "min_dist": 0.1,
+        "n_components_umap": 48,
+        "linkage": "average"
+      },
+      "Silhouette": 0.48465028405189514,
+      "ARI": 0.13524925359165194,
+      "NMI": 0.05740905949629173,
+      "Hungarian": 0.5845344627365258,
+      "metric_used": "cosine"
+    },
+    {
+      "branch": "umap+gmm",
+      "params": {
+        "reducer": "umap",
+        "model": "gmm",
+        "n_neighbors": 60,
+        "min_dist": 0.1,
+        "n_components_umap": 16,
+        "cov_type": "spherical"
+      },
+      "Silhouette": 0.32414663492046003,
+      "ARI": 0.12651866928361458,
+      "NMI": 0.057103683794294445,
+      "Hungarian": 0.5756540747318806,
+      "metric_used": "euclidean"
+    },
+    {
+      "branch": "umap+kmeans",
+      "params": {
+        "reducer": "umap",
+        "model": "kmeans",
+        "n_neighbors": 75,
+        "min_dist": 0.1,
+        "n_components_umap": 16
+      },
+      "Silhouette": 0.4852810204029083,
+      "ARI": 0.11689210404031872,
+      "NMI": 0.054015263644520695,
+      "Hungarian": 0.5676617255277,
+      "metric_used": "cosine"
+    }
+  ],
+  "winner_metric": "Hungarian",
+  "winner": {
+    "branch": "umap+agglo",
+    "params": {
+      "reducer": "umap",
+      "model": "agglo",
+      "n_neighbors": 75,
+      "min_dist": 0.1,
+      "n_components_umap": 48,
+      "linkage": "average"
+    },
+    "Silhouette": 0.48465028405189514,
+    "ARI": 0.13524925359165194,
+    "NMI": 0.05740905949629173,
+    "Hungarian": 0.5845344627365258,
+    "metric_used_for_silhouette": "cosine"
+  }
+}
