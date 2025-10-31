@@ -34,3 +34,8 @@ glove.twitter.27B.200d.txt
 *.log
 *.tmp
 *.bak
+
+# Large binary artifacts
+*.npy
+*.npz
+*.pkl
