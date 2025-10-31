@@ -133,7 +133,10 @@ pip install -r requirements.txt
 
 Google Drive link: https://drive.google.com/drive/folders/1keUzKyub1zjxoVkfp3p7r501LerQM-tt?usp=sharing
 
-Inside the Google Drive, you will see two different elements: `glove.twitter.27B.200d.txt` text file, and `model` folder. Download those separately and put them in your project root directory.
+Inside the Google Drive folder, you will find two items:
+* `glove.twitter.27B.200d.txt` — the pre-trained GloVe embedding file
+* `model/` — the directory containing all pre-trained clustering pipelines and embeddings
+Download both and place them in the project root directory before running the notebooks.
 
 ### 5. Launch Jupyter Notebook
 ```bash
@@ -146,10 +149,10 @@ Below are explanation of each `.ipynb` file:
 * Data Cleaning
   * `data_cleaning.ipynb`
   * `sample_data_cleaning.ipynb`
-  *(Already executed — cleaned outputs are saved as .csv files in the repository. Re-running is optional.)*
+    *(Already executed — cleaned outputs are saved as .csv files in the repository. Re-running is optional.)*
 * Exploratory Data Analysis
   * `eda.ipynb`
-  *(Visualizes dataset distribution, sentiment balance, and example tweets.)*
+    *(Visualizes dataset distribution, sentiment balance, and example tweets.)*
 * Modeling & Clustering Pipelines
   * `trad_feature_extraction.ipynb`
   * `tfidf.ipynb` 
@@ -157,7 +160,7 @@ Below are explanation of each `.ipynb` file:
   * `sbert.ipynb`
   * `bertweet.ipynb`
   * `cardiffnlp_twitter_roberta_sentiment.ipynb`
-  *(Run these to replicate or compare sentiment clustering results.)*
+    *(Run these to replicate or compare sentiment clustering results.)*
 
 
 ## Notes
