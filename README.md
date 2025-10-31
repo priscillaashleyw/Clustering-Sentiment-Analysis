@@ -98,7 +98,7 @@ Clustering-Sentiment-Analysis/
 ```
 
 
-## Setup Instructions
+## Setup Instructions (+ Instructions to Replicate Results)
 
 ### 1. Clone the repository
 
@@ -129,19 +129,39 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Download pretrained embeddings
+### 4. Download from the external Google Drive
 
-For GloVe, place `glove.twitter.27B.200d.txt` in the project root directory  
+Google Drive link: https://drive.google.com/drive/folders/1keUzKyub1zjxoVkfp3p7r501LerQM-tt?usp=sharing
+
+Inside the Google Drive, you will see two different elements: `glove.twitter.27B.200d.txt` text file, and `model` folder. Download those separately and put them in your project root directory.
 
 ### 5. Launch Jupyter Notebook
 ```bash
 jupyter notebook
 ```
 
-Then open the desired `.ipynb` file (e.g. `tfidf.ipynb`, `sbert.ipynb`, `glove.ipynb`) and select **Run All Cells** to execute the analysis.
+Then open the desired `.ipynb` file and select **Run All Cells** to execute the analysis.
+
+Below are explanation of each `.ipynb` file:
+* Data Cleaning
+  * `data_cleaning.ipynb`
+  * `sample_data_cleaning.ipynb`
+  *(Already executed — cleaned outputs are saved as .csv files in the repository. Re-running is optional.)*
+* Exploratory Data Analysis
+  * `eda.ipynb`
+  *(Visualizes dataset distribution, sentiment balance, and example tweets.)*
+* Modeling & Clustering Pipelines
+  * `trad_feature_extraction.ipynb`
+  * `tfidf.ipynb` 
+  * `glove.ipynb`
+  * `sbert.ipynb`
+  * `bertweet.ipynb`
+  * `cardiffnlp_twitter_roberta_sentiment.ipynb`
+  *(Run these to replicate or compare sentiment clustering results.)*
 
 
 ## Notes
 
-- Large files such as `glove.twitter.27B.200d.txt` and the `venv/` folder are excluded via `.gitignore`.
+- All large files such as `glove.twitter.27B.200d.txt`, `*.pkl`, `*.npy`, as well as `*.npz`, and the `venv/` folder are excluded via `.gitignore`.
 - CSV files contain pre-cleaned or sampled tweet datasets used for testing and tuning.
+- All notebooks already load trained models and embeddings, so you don’t need to retrain/re-execute anything, making replication fast and lightweight.
