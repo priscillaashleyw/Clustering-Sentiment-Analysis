@@ -21,30 +21,30 @@
       "reducer": "pca"
     },
     "umap+agglo": {
-      "silhouette_subset": 0.40340590476989746,
+      "silhouette_subset": 0.40291106700897217,
       "model": "agglo",
       "reducer": "umap",
       "linkage": "complete",
       "min_dist": 0.1,
-      "n_components_umap": 64,
+      "n_components_umap": 16,
       "n_neighbors": 30
     },
     "umap+gmm": {
-      "silhouette_subset": 0.2249504115423678,
+      "silhouette_subset": 0.22692108066147032,
       "model": "gmm",
       "reducer": "umap",
       "cov_type": "spherical",
       "min_dist": 0.1,
-      "n_components_umap": 32,
+      "n_components_umap": 16,
       "n_neighbors": 15
     },
     "umap+kmeans": {
-      "silhouette_subset": 0.38603752851486206,
+      "silhouette_subset": 0.3832518756389618,
       "model": "kmeans",
       "reducer": "umap",
       "min_dist": 0.1,
-      "n_components_umap": 16,
-      "n_neighbors": 100
+      "n_components_umap": 32,
+      "n_neighbors": 15
     }
   },
   "full_eval": [
@@ -96,13 +96,13 @@
         "model": "agglo",
         "n_neighbors": 30,
         "min_dist": 0.1,
-        "n_components_umap": 64,
+        "n_components_umap": 16,
         "linkage": "complete"
       },
-      "Silhouette": 0.9584559202194214,
-      "ARI": 0.006366073329211748,
-      "NMI": 0.00889064615698147,
-      "Hungarian": 0.6295511988523806,
+      "Silhouette": 0.9456980228424072,
+      "ARI": 0.013819207736861183,
+      "NMI": 0.018464214965397994,
+      "Hungarian": 0.6324202472846506,
       "metric_used": "cosine"
     },
     {
@@ -112,13 +112,13 @@
         "model": "gmm",
         "n_neighbors": 15,
         "min_dist": 0.1,
-        "n_components_umap": 32,
+        "n_components_umap": 16,
         "cov_type": "spherical"
       },
-      "Silhouette": 0.2923561679000452,
-      "ARI": 0.03409031631301463,
-      "NMI": 0.03411388116747379,
-      "Hungarian": 0.471616913723615,
+      "Silhouette": 0.2929768688313616,
+      "ARI": 0.03457472573444966,
+      "NMI": 0.03439087286102642,
+      "Hungarian": 0.47831136006557823,
       "metric_used": "euclidean"
     },
     {
@@ -126,14 +126,14 @@
       "params": {
         "reducer": "umap",
         "model": "kmeans",
-        "n_neighbors": 100,
+        "n_neighbors": 15,
         "min_dist": 0.1,
-        "n_components_umap": 16
+        "n_components_umap": 32
       },
-      "Silhouette": 0.5047293305397034,
-      "ARI": 0.016584912515188403,
-      "NMI": 0.02772049403754746,
-      "Hungarian": 0.46300976842680514,
+      "Silhouette": 0.4761336147785187,
+      "ARI": 0.021993849537272608,
+      "NMI": 0.02464135581907599,
+      "Hungarian": 0.446273652571897,
       "metric_used": "cosine"
     }
   ],
