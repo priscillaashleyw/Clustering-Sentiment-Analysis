@@ -136,6 +136,7 @@ Google Drive link: https://drive.google.com/drive/folders/1keUzKyub1zjxoVkfp3p7r
 Inside the Google Drive folder, you will find two items:
 * `glove.twitter.27B.200d.txt` — the pre-trained GloVe embedding file
 * `model/` — the directory containing all pre-trained clustering pipelines and embeddings
+
 Download both and place them in the project root directory before running the notebooks.
 
 ### 5. Launch Jupyter Notebook
